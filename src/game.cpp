@@ -1755,7 +1755,7 @@ bool CGame::EventPlayerBotCommand(CGamePlayer* player, string& command, string& 
               Pings += "ms";
             }
             else
-              Pings += "N/A";
+              Pings += "X";
 
             if (i != end(SortedPlayers) - 1)
               Pings += ", ";
@@ -3403,13 +3403,13 @@ bool CGame::EventPlayerBotCommand(CGamePlayer* player, string& command, string& 
     //
     // !VERSION
     //
-
+/*
     case HashCode("version"):
     {
       SendChat(player, "MobaZ Hostbot v" + m_Aura->m_Version);
       break;
     }
-
+*/
     //
     // !VOTEKICK
     //
@@ -3508,7 +3508,7 @@ bool CGame::EventPlayerBotCommand(CGamePlayer* player, string& command, string& 
     //
     // !CHATWHEEL
     //
-    /*case HashCode("chatwheel"):
+    case HashCode("chatwheel"):
     case HashCode("cw"):
     {
       if (Payload.empty())
@@ -3531,7 +3531,7 @@ bool CGame::EventPlayerBotCommand(CGamePlayer* player, string& command, string& 
           SendAllChat("Chat Wheel form Player [" + User + "]  #" + std::to_string(SID));
       }
       break;
-    }*/
+    }
   }
 
   return true;
