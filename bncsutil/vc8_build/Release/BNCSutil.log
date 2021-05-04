@@ -1,0 +1,13 @@
+﻿  bsha1.cpp
+  cdkeydecoder.cpp
+  decodekey.cpp
+  file.cpp
+  libinfo.cpp
+  oldauth.cpp
+  Generating Code...
+  checkrevision.cpp
+  nls.c
+  sha1.c
+  stack.c
+  Generating Code...
+  BNCSutil.vcxproj -> D:\aura-bot-master\bncsutil\vc8_build\Release\BNCSutil.lib

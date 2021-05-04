@@ -1,0 +1,1 @@
+D:\aura-bot-master\bncsutil\vc8_build\Release\BNCSutil.lib
