@@ -140,8 +140,8 @@ bool CBNET::Update(void* fd, void* send_fd)
   {
     // the socket has an error
 
-    Print2("[BNET: " + m_ServerAlias + "] disconnected from battle.net due to socket error");
-    Print("[BNET: " + m_ServerAlias + "] waiting " + to_string(m_ReconnectDelay) + " seconds to reconnect");
+    //Print2("[BNET: " + m_ServerAlias + "] disconnected from battle.net due to socket error");
+    //Print("[BNET: " + m_ServerAlias + "] waiting " + to_string(m_ReconnectDelay) + " seconds to reconnect");
     m_BNCSUtil->Reset(m_UserName, m_UserPassword);
     m_Socket->Reset();
     m_LastDisconnectedTime = Time;
