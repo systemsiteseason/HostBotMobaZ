@@ -1186,7 +1186,7 @@ void CGame::SendWelcomeMessage(CGamePlayer* player)
 {
   SendChat(player, "Chuc cac ban choi game vui ve! www.mobavietnam.com");
   SendChat(player, "Commands List:");
-  SendChat(player, "     !open <slot>, !close <slot>, !ping, !pingall");
+  SendChat(player, "     !open <slot>, !close <slot>, !ping, !pingall, !chatwheel <id>");
   SendChat(player, "     !openall, !closeall, !abort, !hold <name>, !unhold <name>");
   SendChat(player, "     ...");
   SendChat(player, "MobaZ v3.0");
@@ -3522,7 +3522,7 @@ bool CGame::EventPlayerBotCommand(CGamePlayer* player, string& command, string& 
         uint32_t SID;
         SS >> SID;
 
-        if (SS.fail() || SID < 1000 || SID > 1020)
+        if (SS.fail() || SID < 1000 || SID > 2000)
         {
           Print("[GAME: " + m_GameName + "] bad input to close command");
           break;
